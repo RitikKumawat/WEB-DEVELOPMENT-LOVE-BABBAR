@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Table</title>
+    <style>
+        table,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            height: 40px;
+            width: 500px;
+        }
+        tr.One{
+            background-color: aquamarine;
+        }
+        tr.Four{
+            background-color: chartreuse;
+            background-image: url('https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg');
+            background-size: cover ;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        
+            <col span="1" style="background-color: blueviolet;">
+            <col span="1" style="background-color: greenyellow;">
+            <col span="1" style="background-color: red;">
+            <col span="1" style="background-color: aqua;">
+            
+        </colgroup>
+        
+        <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours of eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>140 to 200</td>
+        </tr>
+    </table>
+    <br><br><br><br><br>
+    <table class="New">
+        <colgroup>
+            <col span="1" >
+            <col span="1" style="background-color: red;">
+            <col span="1" >
+            <col span="1" style="background-color: red;">
+            <col span="1" style="visibility: collapse;">
+        
+        </colgroup>
+
+        <tr class="One">
+            <td>col 1</td>
+            <td>col 2</td>
+            <td>col 3</td>
+            <td>col 4</td>
+            <td>col 5</td>
+        </tr>
+        <tr class="Two">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr class="Three">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr class="Four">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr class="Five">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

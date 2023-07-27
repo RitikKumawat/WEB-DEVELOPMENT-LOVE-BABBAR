@@ -1,0 +1,52 @@
+.Box{
+    width: 350px;
+    height: 350px;
+   
+    border: 2px solid black;
+    text-align: center;
+}
+
+.p1{
+    
+    margin: 5px;
+    width: 80px;
+    height: 20px;
+    
+    
+    /* border: 2px solid black; */
+    /* display:inline; */
+}
+.p2{
+    
+    
+    margin-top: -30px;
+    margin-left: 260px;
+    /* border: 2px solid black; */
+    height: 20px;
+    width: 80px;
+    
+    /* display: inline; */
+}
+.p3{
+    margin: 5px;
+    /* border: 2px solid black; */
+    margin-top: 150px;
+    margin-left: 130px;
+    height: 20px;
+    width: 80px;
+}
+.p4{
+    margin: 5px;
+    /* border: 2px solid black; */
+    height: 20px;
+    margin-top: 125px;
+    width: 80px;
+}
+.p5{
+    margin: 5px;
+    /* border: 2px solid black; */
+    height: 20px;
+    margin-top: -27px;
+    margin-left: 260px;
+    width: 80px;
+}
