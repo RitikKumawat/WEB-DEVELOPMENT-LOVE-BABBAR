@@ -5,8 +5,8 @@
 }
 #wrapper{
     height: 100vh;
-    overflow-x: hidden; 
-    overflow-y: auto;
+    overflow-x: hidden;  
+     overflow-y: auto;
     perspective:20px;  /*We want to display Bg ad Fg image using 3d*/
 
 }

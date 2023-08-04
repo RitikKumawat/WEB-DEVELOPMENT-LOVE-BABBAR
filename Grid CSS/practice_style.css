@@ -1,0 +1,33 @@
+.container{
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    height: 500px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 150px 1fr 1fr;
+    
+}
+.box{
+    background-color: cyan;
+    border: 2px solid black;
+    
+    
+}
+
+#box1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#box2{
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+#box3{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}

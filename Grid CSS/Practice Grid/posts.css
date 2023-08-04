@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+* h1,h2,h3,h4,h5,h6,p,a{
+    height: fit-content;
+    display: block;
+}
+.container{
+    height: 10%;
+}
+.b h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper{
+    display: grid;
+    /* border: 2px solid black; */
+    grid-template-columns: 0.85fr 0.15fr;
+    height: fit-content;
+    width: 95%;
+
+}
+.box{
+    /* border: 1px solid rebeccapurple; */
+    height: 100%;
+    padding: 4%;
+}
+.archives{
+    height: fit-content;
+}
+.content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
