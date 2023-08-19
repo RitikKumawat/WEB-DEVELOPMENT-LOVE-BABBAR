@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Profile</title>
+    <link rel="shortcut icon" href="./profile-share-modal/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="circle-top circle"></div>
+        <div class="circle-bottom circle"></div>
+
+        <!-- /// card starts /// -->
+        <div class="card">
+            <img src="./profile-share-modal/profile-image.webp" alt="user image">
+            <h2 class="user-name">Ritik&nbsp;Kumawat</h2>
+            <h3 class="user-designation">Website Developer</h3>
+
+            <div class="buttons-group">
+                <button id="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile
+                </button>
+                <button id="follow-btn">Follow Me</button>
+            </div>
+        </div>
+        <!-- /// card ends /// -->
+    </div>
+    <!-- /// wrapper ends /// -->
+
+
+    <!-- /// profile Modal starts /// -->
+    <div class="modal" id="profile-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title">Share My Profile</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="profile-modal-close"></i>
+            </div>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3>Share this via</h3>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ritik.kumawat.1614" id="facebook-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" id="twitter-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/ritik__kumawat/?hl=en" id="instagram-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/917987479049?text=Hi%20Ritik" id="whatsapp-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/rtkkmwt" id="telegram-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /// profile Modal ends /// -->
+
+
+    <!-- /// follow Modal starts /// -->
+     <div class="modal" id="follow-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title">Github Profile</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="follow-modal-close"></i>
+            </div>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3>Check my Repositories</h3>
+
+            <div class="social-icons">
+                <a href="https://github.com/himanshurelhan70/profile-share-modal" id="github-icon" class="icon" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://github.com/RitikKumawat" id="follow-unfollow" target="_blank">
+                    Follow
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /// follow Modal ends /// -->
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
