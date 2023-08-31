@@ -1,25 +1,31 @@
 
 import './App.css';
-import Item from './components/item';
-import ItemDate from './components/ItemDate';
-import Card from './components/Card';
+import Products from './components/Products';
 function App() {
-  const response=[
+  const products=[
     {
-      itemName:"Nirma",
-      itemDate:"20",
-      itemYear:"1992"
+      id:"p1",
+      title:"Nirma",
+      amount:20,
+      date:new Date(2021,12,28),
     },
     {
-      itemName:"Surf Excel",
-      itemDate:"22",
-      itemYear:"1892"
+      id:"p2",
+      title:"Surf Excel",
+      amount:45,
+      date:new Date(1980,4,12),
     },
     {
-      itemName:"555",
-      itemDate:"19",
-      itemMonth:"July",
-      itemYear:"1890"
+      id:"p3",
+      title:"Tide",
+      amount:80,
+      date:new Date(1970,8,15),
+    },
+    {
+      id:"p4",
+      title:"Maggi",
+      amount:50,
+      date:new Date(1921,10,11),
     }
   ];
  
@@ -28,21 +34,9 @@ function App() {
   return (
    
   <div>
-    <Card>
-    
-      <Item name="Nirma" ></Item>
-      <ItemDate day="20" month="June" year="1998"></ItemDate>
 
-      <Item name="SurfExcel"></Item>
-      <ItemDate day="22" month="December" year="1990"></ItemDate>
+      <Products items={products} />
 
-      <Item name={response[2].itemName}></Item>
-      <ItemDate day={response[2].itemDate} month={response[2].itemMonth} year={response[2].itemYear}></ItemDate>
-      
-      <div classname="App">Hello Jee</div>
-    
-    </Card>
-      
       
   </div>
 
