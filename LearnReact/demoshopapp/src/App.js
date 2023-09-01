@@ -1,5 +1,6 @@
 
 import './App.css';
+import NewProduct from './components/NewProduct';
 import Products from './components/Products';
 function App() {
   const products=[
@@ -29,12 +30,16 @@ function App() {
     }
   ];
  
+  function printProductData(data){
+    console.log("i Am inside App.js")
+    console.log(data);
+  }
  
  
   return (
    
   <div>
-
+      <NewProduct ritik = {printProductData}/>
       <Products items={products} />
 
       
