@@ -3,6 +3,7 @@ const router = express.Router();
 
 const{login, signup} = require("../controllers/Auth");
 const{auth,isStudent,isAdmin} = require("../middleware/auth");
+const User = require("../models/User");
 
 router.post("/login",login);
 router.post("/signup",signup);
@@ -32,5 +33,28 @@ router.get("/admin",auth,isAdmin,(req,res)=>{
     });
 })
 
+// router.get("/getEmail",auth,async (req,res)=>{
+//     try {
+//         const id = req.user.id;
+//         const user = await User.findById({id});
+//         res.status(200).json({
+//             success:true,
+//             id:id,
+//             message:"Welcome to the email route",
+//         })
+//     } catch (error) {
+//         res.status(500).json({
+//             success:false,
+//             error:error.message,
+//             message:"Some thing is wrong here", 
+
+//         })  
+//     }
+//     console.log("Id: ",id);
+//     res.json({
+//         success:true,
+//         message:"Welcome to the email Route",
+//         })
+// })
 
 module.exports = router;

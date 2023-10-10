@@ -6,10 +6,19 @@ require('dotenv').config();
 
 exports.auth = (req,res,next)=>{
     try {
+        console.log("cookie",req.cookies.token);
+        console.log("body",req.body.token);
+        // console.log("header",req.header("authorization"));
         //extract the jwt token
-        const token = req.body.token ;
-        //or const token = req.cookies.token;
-        if(!token){
+        //1st way
+        // const token = req.body.token ;//fetching from the body
+        //2nd way 
+        //const token = req.cookies.token;
+        
+        //3rd way from the header
+        const token = req.header("Authorization").replace("Bearer ","");
+
+        if(!token || token==undefined){
             return res.status(401).json({
                 success:false,
                 message:"Token missing, cant fetch",
