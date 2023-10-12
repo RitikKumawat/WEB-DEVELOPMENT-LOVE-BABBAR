@@ -144,7 +144,7 @@ exports.videoUpload = async (req,res)=>{
         })
     }
 }
-
+//image size reducer
 exports.imageSizeReducer = async (req,res)=>{
     try {
         //data fetch
@@ -201,3 +201,5 @@ exports.imageSizeReducer = async (req,res)=>{
         })
     }
 }
+
+
